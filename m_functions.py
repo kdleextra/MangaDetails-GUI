@@ -1,36 +1,30 @@
 # determine what kind of input -> handle it accordingly
-def getInput(kind):
+def getInput(kind,values):
+	values = values.replace('"','\'').replace('\n', '').replace('\t', '')
 	if kind == 'genre':
-		return getGenre()
+		return getGenre(values)
 	elif kind == 'description':
-		return getDescription(kind)
+		return getDescription(values)
 	else:
-		print('>>' + kind +':')
-		string = input()
-		return '"'+ kind + '": "' + string + '",\n'
+		return '"'+ kind + '": "' + values + '",\n'
 
 #skip input
 def skipInput(kind):
-	print('>>' + kind +':')
 	return '"'+ kind + '": "",\n'
 
 # function to split genre string and return the correct form
-def getGenre():
-	print('>> genre:')
-	s = input()
-	s = s.split(', ')
+def getGenre(values):
+	values = values.split(', ')
 	genre = '['
-	for x in s:
+	for x in values:
 		genre += '"' + x + '",'
 	genre ='"genre": ' + genre[:-1] + "],\n"
 	return genre
 
 # handle description with "quote" sign that break the details.json
-def getDescription(kind):
-	print('>> description:')
-	s = input()
-	s = s.replace('"','\'')
-	return '"'+ kind + '": "' + s + '",\n'
+def getDescription(values):
+	values = values.replace('"','\'').replace('\n', ' ').replace('\t', ' ')
+	return '"description": "' + values + '",\n'
 
 # ## Main Program ##
 # details = open('details.json','w')
