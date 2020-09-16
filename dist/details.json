@@ -1,0 +1,9 @@
+{
+"title": "Title",
+"author": "Author",
+"artist": "Artist",
+"description": "Paragraph1 P2P3",
+"genre": ["g1","g2","g3","g4"],
+"status": "1 = Ongoing",
+"_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]
+}

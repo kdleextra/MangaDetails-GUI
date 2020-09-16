@@ -40,3 +40,6 @@ while True:  # Event Loop
         window['-OUTPUT-'].update(values['title']+'  DONE!')
 
 window.close()
+
+if __name__ == '__main__':
+    main()
