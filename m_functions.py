@@ -26,18 +26,5 @@ def getDescription(values):
 	values = values.replace('"','\'').replace('\n', ' ').replace('\t', ' ')
 	return '"description": "' + values + '",\n'
 
-# ## Main Program ##
-# details = open('details.json','w')
-# result = '{\n'
-# result += getInput('title')
-# result += skipInput('author')
-# result += skipInput('artist')
-# result += getInput('description')
-# result += getInput('genre')
-# print('\nstatus values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]')
-# result += skipInput('status')
-# result += '"_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]\n}'
-# details.write(result)
-# details.close()
 
 
