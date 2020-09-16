@@ -27,12 +27,6 @@ while True:  # Event Loop
             result += skipInput(x)
         else:
             result += getInput(x, values[x])
-    # result += getInput('title', values['title'])
-    # result += getInput('author', values['author'])
-    # result += getInput('artist', values ['artist'])
-    # result += getInput('description', values['description'])
-    # result += getInput('genre', values['genre'])
-    
     result += getInput('status', values['status'][0])
     
     result += '"_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]\n}'
