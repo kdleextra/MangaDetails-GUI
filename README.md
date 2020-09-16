@@ -7,7 +7,8 @@ using the format as shown at [Reading local manga](https://tachiyomi.org/help/gu
 Note:
   >> Description will have its linebreak removed when writing to the json file.
 
-  >> Status of manga must be chosen!!!
-  
   >> Genre should enter in the format:
         genre1, genre2, ..., genreN
+        
+  >> Status of manga must be chosen!!!
+
