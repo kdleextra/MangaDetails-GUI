@@ -1,5 +1,6 @@
 Executable file only works on Windows.
 Built using PySimpleGUI
+
 [Release page](https://github.com/kdleextra/MangaDetails-GUI/releases)
 
 This python scripts help manually make the details.json for Tachiyomi local manga
