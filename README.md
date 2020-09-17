@@ -3,7 +3,7 @@ Built using PySimpleGUI
 
 [Release page](https://github.com/kdleextra/MangaDetails-GUI/releases)
 
-![UI](https://imgur.com/a/D6LKVF1)
+![UI](screenshot/Manga_json_GUI.jpg)
 
 This python scripts help manually make the details.json for Tachiyomi local manga
 using the format as shown at [Reading local manga](https://tachiyomi.org/help/guides/reading-local-manga/#editing-local-manga-details)
