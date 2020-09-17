@@ -1,0 +1,4 @@
+build/* linguist-vendored
+dist/* linguist-vendored
+screenshot/* linguist-vendored
+__pycache__/* linguist-vendored
