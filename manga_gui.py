@@ -16,30 +16,29 @@ layout = [[sg.Text('Title ', size=SIZE), sg.Input(do_not_clear=CLEAR, key='title
 
 window = sg.Window('Tachiyomi \'details.json\' Generator', layout, keep_on_top=True )
 
-while True:  # Event Loop
-    event, values = window.read()
-    # print(event, values)
-    # ## Main Program ##
-    details = open('details.json','w')
-    result = '{\n'
-    for x in ["title", "author", "artist", "description", "genre"]:
-        if values[x] is None:
-            result += skipInput(x)
-        else:
-            result += getInput(x, values[x])
-    result += getInput('status', values['status'][0][0])
-    
-    result += '"_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]\n}'
-    details.write(result)
-    details.close()
-    print('details.json ' + '  GENERATED!\n')
-    if event == sg.WIN_CLOSED or event == 'Exit':
-        break
-    if event == 'Generate':
-        # Update the "output" text element to be the value of "input" element
-        window['-OUTPUT-'].update(values['title']+'  DONE!')
+if __name__ == '__main__': 
+	while True:  # Event Loop
+	    event, values = window.read()
+	    # print(event, values)
+	    # ## Main Program ##
+	    details = open('details.json','w')
+	    result = '{\n'
+	    for x in ["title", "author", "artist", "description", "genre"]:
+	        if values[x] is None:
+	            result += skipInput(x)
+	        else:
+	            result += getInput(x, values[x])
+	    result += getInput('status', values['status'][0][0])
+	    
+	    result += '"_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]\n}'
+	    details.write(result)
+	    details.close()
+	    #print('details.json ' + '  GENERATED!\n')
+	    if event == sg.WIN_CLOSED or event == 'Exit':
+	        break
+	    if event == 'Generate':
+	        # Update the "output" text element to be the value of "input" element
+	        window['-OUTPUT-'].update(values['title']+'  DONE!')
 
-window.close()
+	window.close()
 
-if __name__ == '__main__':
-    main()
