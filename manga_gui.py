@@ -27,7 +27,7 @@ while True:  # Event Loop
             result += skipInput(x)
         else:
             result += getInput(x, values[x])
-    result += getInput('status', values['status'][0])
+    result += getInput('status', values['status'][0][0])
     
     result += '"_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]\n}'
     details.write(result)

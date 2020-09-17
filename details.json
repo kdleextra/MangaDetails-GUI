@@ -4,6 +4,6 @@
 "artist": "",
 "description": "",
 "genre": [""],
-"status": "0 = Unknown",
+"status": "1",
 "_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]
 }
