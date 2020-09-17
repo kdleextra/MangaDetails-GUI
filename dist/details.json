@@ -1,9 +1,9 @@
 {
-"title": "",
-"author": "",
-"artist": "",
-"description": "",
-"genre": [""],
-"status": "1",
+"title": "sdfs",
+"author": "sdfsdf",
+"artist": "sdfsdf",
+"description": "sdfsdf",
+"genre": ["sdfsdf"],
+"status": "2",
 "_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]
 }

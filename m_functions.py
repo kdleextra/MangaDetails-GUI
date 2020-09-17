@@ -1,6 +1,6 @@
 # determine what kind of input -> handle it accordingly
 def getInput(kind,values):
-	values = values.replace('"','\'').replace('\n', '').replace('\t', '')
+	values = values.replace('"','\'').replace('\n', '').replace('\t', '').replace(b'\xe2\x80\x94'.decode('utf-8'), '--')
 	if kind == 'genre':
 		return getGenre(values)
 	elif kind == 'description':
